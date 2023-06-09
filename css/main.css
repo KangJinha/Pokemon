@@ -121,6 +121,9 @@ main {
     overflow: hidden;
 }
 
+/* 번호를 배경효과를 주고 싶을때 isolation,
+div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 overflow */
+
 .pokemon-id-back {
     position: absolute;
     top: 1rem;
