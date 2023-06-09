@@ -45,7 +45,7 @@ function showPokemon(poke) {
             </div>
             <div class="pokemon-stats">
                 <p class="stat">${poke.habitat.name}</p>
-                <p class="stat"></p>
+                <p class="stat">${poke.genera[1].genus}</p>
             </div>
         </div>
     `;
