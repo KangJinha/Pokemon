@@ -1,8 +1,7 @@
 const readyPokemon = document.querySelector("#readyPokemon");
 const buttonsHeader = document.querySelectorAll(".btn-header");
 
-let URL = "https://pokeapi.co/api/v2/pokemon/";
-//let URL = "https://pokeapi.co/api/v2/pokemon-species/";
+let URL = "https://pokeapi.co/api/v2/pokemon-species/";
 //한국이름은 이걸로 가져와야하는데...
 for (let i = 1; i <= 160; i++) {
     fetch(URL + i)
@@ -39,7 +38,7 @@ function showPokemon(poke) {
         <div class="pokemon-info">
             <div class="nombre-contenedor">
                 <p class="pokemon-id">#${pokeId}</p>
-                <h2 class="pokemon-nombre">${poke.name}꼬북</h2>
+                <h2 class="pokemon-nombre">${poke.name}</h2>
             </div>
             <div class="pokemon-types">
                 ${type}
