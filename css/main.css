@@ -92,20 +92,20 @@ main {
     margin: 0 auto;
 }
 
-.pokemon-todos {
+.pokemon-all {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
 @media screen and (min-width: 470px) {
-    .pokemon-todos {
+    .pokemon-all {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 700px) {
-    .pokemon-todos {
+    .pokemon-all {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -175,7 +175,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     font-size: 1.4rem;
 }
 
-.pokemon-tipos {
+.pokemon-types {
     display: flex;
     gap: 0.5rem;
     font-size: 0.75rem;
@@ -184,7 +184,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     justify-content: center;
 }
 
-.tipo {
+.type {
     padding: 0.25rem 0.5rem;
     border-radius: 100vmax;
 }
@@ -211,7 +211,8 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     color: var(--clr-black);
 }
 
-.water {
+.water,
+.water1 {
     background-color: var(--type-water);
     color: var(--clr-white);
 }
