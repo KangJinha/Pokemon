@@ -37,9 +37,9 @@ function showPokemon(poke) {
             />
         </div>
         <div class="pokemon-info">
-            <div class="nombre-contenedor">
+            <div class="name-contenedor">
                 <p class="pokemon-id">#${pokeId}</p>
-                <h2 class="pokemon-nombre">
+                <h2 class="pokemon-name">
                 ${poke.name}
                 </h2>
             </div>
@@ -86,9 +86,9 @@ buttonsHeader.forEach((btn) =>
         />
     </div>
     <div class="pokemon-info">
-        <div class="nombre-contenedor">
+        <div class="name-contenedor">
             <p class="pokemon-id">#025</p>
-            <h2 class="pokemon-nombre">피카츄</h2>
+            <h2 class="pokemon-name">피카츄</h2>
         </div>
         <div class="pokemon-types">
             <p class="electric type">ELECTRIC</p>

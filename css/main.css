@@ -155,7 +155,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     text-align: center;
 }
 
-.nombre-contenedor {
+.name-contenedor {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -171,7 +171,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     font-weight: 500;
 }
 
-.pokemon-nombre {
+.pokemon-name {
     font-size: 1.4rem;
 }
 
