@@ -11,24 +11,24 @@ for (let i = 1; i <= 160; i++) {
 //fetch로 가져온데이타를 showPokemon함수로 가져온다
 
 function showPokemon(poke) {
-    let type = poke.types.map(
-        (type) => `<p class="${type.type.name} type">${type.type.name}</p>`
-    );
-    type = type.join("");
-    //array형식으로 되어있는것을 string로 변경!!
+    // let type = poke.types.map(
+    //     (type) => `<p class="${type.type.name} type">${type.type.name}</p>`
+    // );
+    // type = type.join("");
+    // //array형식으로 되어있는것을 string로 변경!!
 
-    let pokeId = poke.id.toString();
-    if (pokeId.length === 1) {
-        pokeId = "00" + pokeId;
-    } else if (pokeId.length === 2) {
-        pokeId = "0" + pokeId;
-    }
+    // let pokeId = poke.id.toString();
+    // if (pokeId.length === 1) {
+    //     pokeId = "00" + pokeId;
+    // } else if (pokeId.length === 2) {
+    //     pokeId = "0" + pokeId;
+    // }
     //pokeId 자리수맞춰주기
 
     const div = document.createElement("div");
     div.classList.add("pokemon");
     div.innerHTML = `
-        <p class="pokemon-id-back">#${pokeId}</p>
+        <p class="pokemon-id-back">#${poke.id}</p>
         <div class="class pokemon-imagen">
             <img
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png"
@@ -37,15 +37,15 @@ function showPokemon(poke) {
         </div>
         <div class="pokemon-info">
             <div class="nombre-contenedor">
-                <p class="pokemon-id">#${pokeId}</p>
-                <h2 class="pokemon-nombre">${poke.name}</h2>
+                <p class="pokemon-id">#${poke.id}</p>
+                <h2 class="pokemon-nombre">${poke.names[2].name}</h2>
             </div>
             <div class="pokemon-types">
-                ${type}
+                
             </div>
             <div class="pokemon-stats">
-                <p class="stat">${poke.height}M</p>
-                <p class="stat">${poke.weight}KG</p>
+                <p class="stat">${poke.habitat.name}</p>
+                <p class="stat"></p>
             </div>
         </div>
     `;
