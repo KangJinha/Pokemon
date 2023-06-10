@@ -135,13 +135,13 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     color: var(--clr-gray);
 }
 
-.pokemon-imagen {
+.pokemon-image {
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
 }
 
-.pokemon-imagen img {
+.pokemon-image img {
     width: 100%;
     max-width: 6rem;
 }
@@ -155,7 +155,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     text-align: center;
 }
 
-.name-contenedor {
+.name-container {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;

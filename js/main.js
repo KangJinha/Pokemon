@@ -30,14 +30,14 @@ function showPokemon(poke) {
     div.classList.add("pokemon");
     div.innerHTML = `
         <p class="pokemon-id-back">#${pokeId}</p>
-        <div class="class pokemon-imagen">
+        <div class="class pokemon-image">
             <img
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${poke.id}.png"
-                alt="${poke.id}"
+                src="${poke.sprites.other["official-artwork"].front_default}"
+                alt="${poke.name}"
             />
         </div>
         <div class="pokemon-info">
-            <div class="name-contenedor">
+            <div class="name-container">
                 <p class="pokemon-id">#${pokeId}</p>
                 <h2 class="pokemon-name">
                 ${poke.name}
@@ -58,7 +58,7 @@ function showPokemon(poke) {
 buttonsHeader.forEach((btn) =>
     btn.addEventListener("click", (event) => {
         const btnId = event.currentTarget.id;
-
+        console.log(btnId);
         readyPokemon.innerHTML = "";
 
         for (let i = 1; i <= 160; i++) {
@@ -68,8 +68,8 @@ buttonsHeader.forEach((btn) =>
                     if (btnId === "all") {
                         showPokemon(data);
                     } else {
-                        const type = data.types.map((type) => type.type.name);
-                        if (type.same((type) => type.includes(btnId))) {
+                        const types = data.types.map((type) => type.type.name);
+                        if (types.some((type) => type.includes(btnId))) {
                             showPokemon(data);
                         }
                     }
@@ -77,26 +77,3 @@ buttonsHeader.forEach((btn) =>
         }
     })
 );
-/* <div class="pokemon">
-    <p class="pokemon-id-back">#025</p>
-    <div class="class pokemon-imagen">
-        <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-            alt="Pikachu"
-        />
-    </div>
-    <div class="pokemon-info">
-        <div class="name-contenedor">
-            <p class="pokemon-id">#025</p>
-            <h2 class="pokemon-name">피카츄</h2>
-        </div>
-        <div class="pokemon-types">
-            <p class="electric type">ELECTRIC</p>
-            <p class="fighting type">FIGHTING</p>
-        </div>
-        <div class="pokemon-stats">
-            <p class="stat">4M</p>
-            <p class="stat">60KG</p>
-        </div>
-    </div>
-</div> */
