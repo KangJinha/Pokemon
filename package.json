@@ -1,0 +1,21 @@
+{
+    "name": "pokemon",
+    "version": "1.0.0",
+    "description": "포켓몬도감",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --exec babel-node index.js"
+    },
+    "author": "Jinha",
+    "license": "ISC",
+    "homepage": "https://github.com/KangJinha/Pokemon",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.22.5",
+        "@babel/node": "^7.22.5",
+        "@babel/preset-env": "^7.22.5",
+        "nodemon": "^2.0.22"
+    }
+}
