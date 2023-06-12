@@ -4,13 +4,14 @@
     "description": "포켓몬도감",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon --exec babel-node index.js"
+        "dev": "nodemon --exec babel-node ./src/server.js"
     },
     "author": "Jinha",
     "license": "ISC",
     "homepage": "https://github.com/KangJinha/Pokemon",
     "dependencies": {
-        "express": "^4.18.2"
+        "express": "^4.18.2",
+        "pug": "^3.0.2"
     },
     "devDependencies": {
         "@babel/core": "^7.22.5",

@@ -2,15 +2,16 @@ const readyPokemon = document.querySelector("#readyPokemon");
 const buttonsHeader = document.querySelectorAll(".btn-header");
 
 let URL = "https://pokeapi.co/api/v2/pokemon/";
-//let URL = "https://pokeapi.co/api/v2/pokemon-species/";
+let URL2 = "https://pokeapi.co/api/v2/pokemon-species/";
 //한국이름은 이걸로 가져와야하는데...
-for (let i = 1; i <= 160; i++) {
+let pokeHead = 4;
+for (let i = 1; i <= pokeHead; i++) {
     fetch(URL + i)
         .then((res) => res.json())
         .then((data) => showPokemon(data));
 }
-//fetch로 가져온데이타를 showPokemon함수로 가져온다
 
+//fetch로 가져온데이타를 showPokemon함수로 가져온다
 function showPokemon(poke) {
     let type = poke.types.map(
         (type) => `<p class="${type.type.name} type">${type.type.name}</p>`
@@ -25,7 +26,6 @@ function showPokemon(poke) {
         pokeId = "0" + pokeId;
     }
     //pokeId 자리수맞춰주기
-
     const div = document.createElement("div");
     div.classList.add("pokemon");
     div.innerHTML = `
@@ -61,7 +61,7 @@ buttonsHeader.forEach((btn) =>
         console.log(btnId);
         readyPokemon.innerHTML = "";
 
-        for (let i = 1; i <= 160; i++) {
+        for (let i = 1; i <= pokeHead; i++) {
             fetch(URL + i)
                 .then((res) => res.json())
                 .then((data) => {
