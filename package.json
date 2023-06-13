@@ -2,7 +2,7 @@
     "name": "pokemon",
     "version": "1.0.0",
     "description": "포켓몬도감",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
         "dev": "nodemon --exec babel-node ./src/server.js"
     },

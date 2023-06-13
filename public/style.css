@@ -33,6 +33,13 @@
     font-family: "Rubik", sans-serif;
 }
 
+h1 {
+    color: #a040a0;
+}
+h2 {
+    display: flex;
+}
+
 ul {
     list-style-type: none;
 }
@@ -211,8 +218,7 @@ div 밖으로 넘치지 않도록 하고 싶을때 div밖으로가면 잘림 ove
     color: var(--clr-black);
 }
 
-.water,
-.water1 {
+.water {
     background-color: var(--type-water);
     color: var(--clr-white);
 }

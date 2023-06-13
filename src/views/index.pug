@@ -1,0 +1,83 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Pok&eacute;mon
+  link(rel='stylesheet' href='style.css')
+header
+  nav.nav
+    img(src='/public/logo.png' alt='Logo Pokédex')
+    ul.nav-list
+      li.nav-item
+        button#all.btn.btn-header all
+      li.nav-item
+        button#normal.btn.btn-header.normal
+          | normal
+      li.nav-item
+        button#fire.btn.btn-header.fire
+          | fire
+      li.nav-item
+        button#water.btn.btn-header.water
+          | water
+      li.nav-item
+        button#grass.btn.btn-header.grass
+          | grass
+      li.nav-item
+        button#electric.btn.btn-header.electric
+          | electric
+      li.nav-item
+        button#ice.btn.btn-header.ice ice
+      li.nav-item
+        button#fighting.btn.btn-header.fighting
+          | Fighting
+      li.nav-item
+        button#poison.btn.btn-header.poison
+          | poison
+      li.nav-item
+        button#ground.btn.btn-header.ground
+          | ground
+      li.nav-item
+        button#flying.btn.btn-header.flying
+          | flying
+      li.nav-item
+        button#psychic.btn.btn-header.psychic
+          | Psychic
+      li.nav-item
+        button#bug.btn.btn-header.bug Bug
+      li.nav-item
+        button#rock.btn.btn-header.rock
+          | rock
+      li.nav-item
+        button#ghost.btn.btn-header.ghost
+          | ghost
+      li.nav-item
+        button#dark.btn.btn-header.dark
+          | dark
+      li.nav-item
+        button#dragon.btn.btn-header.dragon
+          | dragon
+      li.nav-item
+        button#steel.btn.btn-header.steel
+          | steel
+      li.nav-item
+        button#fairy.btn.btn-header.fairy
+          | fairy
+main
+  #all
+    #readyPokemon.pokemon-all
+      .pokemon
+        p.pokemon-id-back #025
+        .class.pokemon-image
+          img(src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png' alt='Pikachu')
+        .pokemon-info
+          .name-container
+            p.pokemon-id #025
+            h2.pokemon-name &#xD53C;&#xCE74;&#xCE04;
+          .pokemon-types
+            p.electric.type ELECTRIC
+            p.fighting.type FIGHTING
+          .pokemon-stats
+            p.stat 4M
+            p.stat 60KG
+script(src='../js/main.js')
