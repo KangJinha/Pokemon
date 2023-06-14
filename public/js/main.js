@@ -12,11 +12,11 @@ for (let i = 1; i <= pokeHead; i++) {
         .then((poke) => showPokemon(poke));
 }
 
-// for (let i = 1; i <= pokeHead; i++) {
-//     fetch(URL2 + i)
-//         .then((res) => res.json())
-//         .then((data) => showPokemon(data));
-// }
+for (let i = 1; i <= pokeHead; i++) {
+    fetch(URL2 + i)
+        .then((res) => res.json())
+        .then((data) => showPokemon(data));
+}
 
 //fetch로 가져온데이타를 showPokemon함수로 가져온다
 function showPokemon(poke) {

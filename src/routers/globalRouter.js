@@ -1,8 +1,10 @@
 import express from "express";
-import { home, join } from "../controllers/globalController";
+import path from "path";
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", home);
-globalRouter.get("/join", join);
+globalRouter.get("/", (req, res) =>
+    res.sendFile(path.join(__dirname + "../../index.html"))
+);
+
 export default globalRouter;

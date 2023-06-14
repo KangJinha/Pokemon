@@ -10,6 +10,7 @@
     "license": "ISC",
     "homepage": "https://github.com/KangJinha/Pokemon",
     "dependencies": {
+        "ejs": "^3.1.9",
         "express": "^4.18.2",
         "pug": "^3.0.2"
     },
