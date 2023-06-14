@@ -10,6 +10,7 @@ app.use("/", globalRouter);
 app.use("/user", userRouter);
 
 app.use(express.static("public"));
+
 app.set("views", process.cwd() + "/src/views");
 app.set("view engine", "pug");
 
